@@ -1,0 +1,10 @@
+module mascotaAPP{
+    interface Mascota{
+        boolean insertarMascota(in long id, in wstring nombreMascota,in wstring apellidoMascota,in wstring nombreDueno, in long telefonoDueno);
+        wstring consultarMascota (in long id);
+        boolean eliminarMascota (in long id);
+        boolean actualizarMascota (in long id, in wstring nombreMascota,in wstring apellidoMascota,in wstring nombreDueno, in long telefonoDueno);
+        wstring listarMascota();
+        oneway void shutdown();
+    };
+};
